@@ -17,6 +17,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Quaternion.msg"
   "msg/Pose3D.msg"
   "msg/Pose3DStamped.msg"
+  "srv/Gstam.srv"
+  "srv/GetFromRio.srv"
+  "srv/PublishToRio.srv"
  )
 
 ament_export_dependencies(rosidl_default_runtime)

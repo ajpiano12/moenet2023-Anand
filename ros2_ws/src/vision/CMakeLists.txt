@@ -17,13 +17,16 @@ find_package(custom_msgs REQUIRED)
 
 add_executable(camera src/camera.cpp)
 add_executable(combiner src/combiner.cpp)
+add_executable(network src/ntwrkTables.cpp)
 ament_target_dependencies(camera rclcpp std_msgs custom_msgs)
 ament_target_dependencies(combiner rclcpp std_msgs custom_msgs)
+ament_target_dependencies(network rclcpp std_msgs custom_msgs)
 
 
 install(TARGETS
   camera
   combiner
+  network
   DESTINATION lib/${PROJECT_NAME})
 
 

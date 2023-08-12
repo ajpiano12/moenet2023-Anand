@@ -50,6 +50,12 @@ def generate_launch_description():
             namespace='combiner',
             executable='combiner',
             name='combiner'
+        ),
+
+        Node(package='vision',
+            namespace='network',
+            executable='network',
+            name='network'
         )
 
     ])
