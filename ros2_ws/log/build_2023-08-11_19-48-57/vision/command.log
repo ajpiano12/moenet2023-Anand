@@ -1,0 +1,2 @@
+Invoking command in '/home/moenet/moenet2023-Anand/ros2_ws/build/vision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/moenet/moenet2023-Anand/ros2_ws/build/vision -- -j16 -l16
+Invoked command in '/home/moenet/moenet2023-Anand/ros2_ws/build/vision' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/moenet/moenet2023-Anand/ros2_ws/build/vision -- -j16 -l16

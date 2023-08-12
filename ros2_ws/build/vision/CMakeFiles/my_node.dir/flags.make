@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/moenet/moenet2023-Anand/src/vision/include
+CXX_INCLUDES = -I/home/moenet/moenet2023-Anand/ros2_ws/src/vision/include
 
 CXX_FLAGS = -Wall -Wextra -Wpedantic
 

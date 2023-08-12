@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/moenet/moenet2023-Anand/src/vision
+CMAKE_SOURCE_DIR = /home/moenet/moenet2023-Anand/ros2_ws/src/vision
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/moenet/moenet2023-Anand/build/vision
+CMAKE_BINARY_DIR = /home/moenet/moenet2023-Anand/ros2_ws/build/vision
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moenet/moenet2023-Anand/build/vision/CMakeFiles /home/moenet/moenet2023-Anand/build/vision//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moenet/moenet2023-Anand/ros2_ws/build/vision/CMakeFiles /home/moenet/moenet2023-Anand/ros2_ws/build/vision//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moenet/moenet2023-Anand/build/vision/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moenet/moenet2023-Anand/ros2_ws/build/vision/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -210,6 +210,43 @@ my_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/build
 .PHONY : my_node/fast
 
+#=============================================================================
+# Target rules for targets named camera
+
+# Build rule for target.
+camera: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 camera
+.PHONY : camera
+
+# fast build rule for target.
+camera/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/build
+.PHONY : camera/fast
+
+src/camera.o: src/camera.cpp.o
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/src/camera.cpp.o
+.PHONY : src/camera.cpp.o
+
+src/camera.i: src/camera.cpp.i
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
+
+src/camera.s: src/camera.cpp.s
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
+
 src/my_node.o: src/my_node.cpp.o
 .PHONY : src/my_node.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... uninstall"
 	@echo "... vision_uninstall"
+	@echo "... camera"
 	@echo "... my_node"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
 	@echo "... src/my_node.o"
 	@echo "... src/my_node.i"
 	@echo "... src/my_node.s"

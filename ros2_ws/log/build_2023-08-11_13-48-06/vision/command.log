@@ -1,4 +1,0 @@
-Invoking command in '/home/moenet/moenet2023-Anand/build/vision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/moenet/moenet2023-Anand/build/vision -- -j16 -l16
-Invoked command in '/home/moenet/moenet2023-Anand/build/vision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/moenet/moenet2023-Anand/build/vision -- -j16 -l16
-Invoking command in '/home/moenet/moenet2023-Anand/build/vision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/moenet/moenet2023-Anand/build/vision
-Invoked command in '/home/moenet/moenet2023-Anand/build/vision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/moenet/moenet2023-Anand/build/vision

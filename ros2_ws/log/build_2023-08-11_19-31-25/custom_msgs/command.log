@@ -1,0 +1,6 @@
+Invoking command in '/home/moenet/moenet2023-Anand/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs
+Invoked command in '/home/moenet/moenet2023-Anand/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs
+Invoking command in '/home/moenet/moenet2023-Anand/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/moenet/moenet2023-Anand/ros2_ws/build/custom_msgs -- -j16 -l16
+Invoked command in '/home/moenet/moenet2023-Anand/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/moenet/moenet2023-Anand/ros2_ws/build/custom_msgs -- -j16 -l16
+Invoking command in '/home/moenet/moenet2023-Anand/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/moenet/moenet2023-Anand/ros2_ws/build/custom_msgs
+Invoked command in '/home/moenet/moenet2023-Anand/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/moenet/moenet2023-Anand/ros2_ws/build/custom_msgs
