@@ -10,7 +10,7 @@ struct Pose3D{
     double x, y, z;
     Quaternion rot;
 };
-string cameraID;
+string cameraID = "pose";
 string PoseToString(Pose3D){
 
 }
@@ -19,6 +19,8 @@ class Camera : public rclcpp::Node{
     public:
         Camera() : Node(cameraID){
             publisher = this->create_publisher<custom_msgs::msg::Pose3D>(cameraID, 1);
+            //update();
+            //timer = this->create_wall_timer(50ms, std::bind(&Camera::update, this));
         }
     private:
         void update(){
@@ -35,12 +37,12 @@ class Camera : public rclcpp::Node{
             publisher->publish(message); 
         }
     rclcpp::Publisher<custom_msgs::msg::Pose3D>::SharedPtr publisher;
+    //rclcpp::TimerBase::SharedPtr timer;
 };
 
 int main(int argc, char * argv[]){
-
     string cameraInfo = argv[1];
-    
+   
 
     rclcpp::init(argc, argv);
     auto node = std::make_shared<Camera>();
