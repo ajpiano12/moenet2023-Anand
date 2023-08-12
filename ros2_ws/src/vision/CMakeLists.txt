@@ -16,11 +16,14 @@ find_package(custom_msgs REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 add_executable(camera src/camera.cpp)
+add_executable(combiner src/combiner.cpp)
 ament_target_dependencies(camera rclcpp std_msgs custom_msgs)
+ament_target_dependencies(combiner rclcpp std_msgs custom_msgs)
 
 
 install(TARGETS
   camera
+  combiner
   DESTINATION lib/${PROJECT_NAME})
 
 
