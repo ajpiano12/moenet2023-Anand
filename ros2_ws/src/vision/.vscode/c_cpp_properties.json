@@ -11,7 +11,8 @@
                 "/home/moenet/moenet2023-Anand/ros2_ws/src/vision/include/**",
                 "/usr/include/**",
                 "/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs/include/custom_msgs",
-                "/opt/ros/humble/include/rclcpp"
+                "/opt/ros/humble/include/rclcpp",
+                "/opt/ros/humble/include/rosidl_runtime_cpp"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

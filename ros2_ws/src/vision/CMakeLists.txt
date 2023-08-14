@@ -22,7 +22,6 @@ ament_target_dependencies(camera rclcpp std_msgs custom_msgs)
 ament_target_dependencies(combiner rclcpp std_msgs custom_msgs)
 ament_target_dependencies(network rclcpp std_msgs custom_msgs)
 
-
 install(TARGETS
   camera
   combiner
