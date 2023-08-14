@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 #find_package(rclcpp_components REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(custom_msgs REQUIRED)
+find_package(wpilib REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -20,6 +21,7 @@ add_executable(combiner src/combiner.cpp)
 add_executable(network src/ntwrkTables.cpp)
 ament_target_dependencies(camera rclcpp std_msgs custom_msgs)
 ament_target_dependencies(combiner rclcpp std_msgs custom_msgs)
+target_link_libraries(network ntcore)
 ament_target_dependencies(network rclcpp std_msgs custom_msgs)
 
 install(TARGETS
