@@ -1,0 +1,3 @@
+[submodule "ros2_ws/src/third_party/allwpilib"]
+	path = ros2_ws/src/third_party/allwpilib
+	url = https://github.com/ajpiano12/allwpilib.git
