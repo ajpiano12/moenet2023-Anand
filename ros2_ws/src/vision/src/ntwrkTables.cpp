@@ -1,6 +1,8 @@
 #include "custom_msgs/msg/pose3_d.hpp"
+#include "custom_msgs/srv/publish_to_rio.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/float64.hpp"
+
 
 #define  _1 std::placeholders::_1
 
@@ -29,10 +31,21 @@ class NetworkTable : public rclcpp::Node{
 
             bestPose = this->create_subscription<custom_msgs::msg::Pose3D>
             ("/combiner/combinedPose", 1, std::bind(&NetworkTable :: poseUpdate, this, _1));
+
+            client = create_client<custom_msgs::srv::PublishToRio>("publish_to_rio");
+
             update();
+
         }
     private:
-        void poseUpdate(const custom_msgs::msg::Pose3D::SharedPtr msg){finalAns = msgToPos(msg);}
+        void poseUpdate(const custom_msgs::msg::Pose3D::SharedPtr msg){
+            auto request = std::make_shared<custom_msgs::srv::PublishToRio::Request>();
+            request-> a = *msg;
+            auto future = client->async_send_request(request);
+
+            // Wait for the response and handle it
+            auto result = future.get();
+        }
         void update(){
             auto message = custom_msgs::msg::Pose3D();
             auto acceler = std_msgs::msg::Float64();
@@ -44,6 +57,9 @@ class NetworkTable : public rclcpp::Node{
 
     rclcpp::Publisher<custom_msgs::msg::Pose3D>::SharedPtr odometry;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr accel;
+
+    rclcpp::Client<custom_msgs::srv::PublishToRio>::SharedPtr client;
+   
 }; 
 
 

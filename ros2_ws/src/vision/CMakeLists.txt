@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 #find_package(rclcpp_components REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(custom_msgs REQUIRED)
+find_package(wpilib REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -18,14 +19,18 @@ find_package(custom_msgs REQUIRED)
 add_executable(camera src/camera.cpp)
 add_executable(combiner src/combiner.cpp)
 add_executable(network src/ntwrkTables.cpp)
+add_executable(rioPub src/rioPublish.cpp)
 ament_target_dependencies(camera rclcpp std_msgs custom_msgs)
 ament_target_dependencies(combiner rclcpp std_msgs custom_msgs)
+target_link_libraries(rioPub ntcore)
 ament_target_dependencies(network rclcpp std_msgs custom_msgs)
+ament_target_dependencies(rioPub rclcpp std_msgs custom_msgs)
 
 install(TARGETS
   camera
   combiner
   network
+  rioPub
   DESTINATION lib/${PROJECT_NAME})
 
 
