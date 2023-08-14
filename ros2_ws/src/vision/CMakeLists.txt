@@ -18,7 +18,7 @@ find_package(wpilib REQUIRED)
 
 add_executable(camera src/camera.cpp)
 add_executable(combiner src/combiner.cpp)
-add_executable(network src/ntwrkTables.cpp)
+add_executable(network src/networkTables.cpp)
 add_executable(rioPub src/rioPublish.cpp)
 ament_target_dependencies(camera rclcpp std_msgs custom_msgs)
 ament_target_dependencies(combiner rclcpp std_msgs custom_msgs)
