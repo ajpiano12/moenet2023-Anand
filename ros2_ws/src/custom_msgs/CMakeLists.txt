@@ -12,6 +12,19 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/Rotation3d.msg"
+  "msg/Pose3d.msg"
+  "msg/Pose3dStamped.msg"
+  "srv/Gstam.srv"
+  "srv/GetFromRio.srv"
+  "srv/PublishToRio.srv"
+ )
+
+
+ament_export_dependencies(rosidl_default_runtime)
+
 find_package(wpilib REQUIRED)
 
 file(GLOB msg_type_source
@@ -26,17 +39,5 @@ target_include_directories(msg_type
 )
 
 target_link_libraries(msg_type PUBLIC wpimath)
-
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Rotation3d.msg"
-  "msg/Pose3d.msg"
-  "msg/Pose3dStamped.msg"
-  "srv/Gstam.srv"
-  "srv/GetFromRio.srv"
-  "srv/PublishToRio.srv"
- )
-
-
-ament_export_dependencies(rosidl_default_runtime)
 
 ament_package()
