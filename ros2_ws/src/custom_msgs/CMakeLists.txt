@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Rotation3d.msg"
   "msg/Pose3d.msg"
   "msg/Pose3dStamped.msg"
+  "msg/Quaternion.msg"
   "srv/Gstam.srv"
   "srv/GetFromRio.srv"
   "srv/PublishToRio.srv"
