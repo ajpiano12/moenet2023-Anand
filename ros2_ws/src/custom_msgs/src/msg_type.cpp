@@ -1,8 +1,5 @@
 #include "msg_type.hpp"
 
-#include "frc/geometry/Pose3d.h"
-#include "custom_msgs/msg/pose3d.hpp"
-
 #include "frc/geometry/Quaternion.h"
 #include "custom_msgs/msg/quaternion.hpp"
 
@@ -12,7 +9,14 @@
 #include "frc/geometry/Translation3d.h"
 #include "custom_msgs/msg/translation3d.hpp"
 
+#include "frc/geometry/Pose3d.h"
+#include "custom_msgs/msg/pose3d.hpp"
+
+#include "frc/geometry/Pose3dStamped.h"
+#include "custom_msgs/msg/pose3d_stamped.hpp"
+
 #include <units/length.h>
+#include <units/time.h>
 
 namespace msg_type{
     frc::Quaternion Quaternion_to_type(custom_msgs::msg::Quaternion& quaternion){
@@ -36,5 +40,12 @@ namespace msg_type{
         return frc::Pose3d(
             Translation3d_to_type(pose3d.t),
             Rotation3d_to_type(pose3d.r));
+    }
+
+    frc::Pose3dStamped Pose3dStamped_to_type(cusom_msgs::msg::Pose3dStamped& pose3dstamped){
+        return frc::Pose3dStamped(
+            Pose3d_to_type(pose3dstamped.pose),
+            units::second_t{pose3dstamped.time}
+        );
     }
 }
