@@ -1,6 +1,7 @@
 */build
 */install
 */log
+*/__pycache__
 ros2_ws/.vscode
 */.vscode
 ros2_ws/build
