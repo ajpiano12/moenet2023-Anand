@@ -20,10 +20,16 @@ add_executable(camera src/camera.cpp)
 add_executable(combiner src/combiner.cpp)
 add_executable(network src/networkTables.cpp)
 add_executable(rioPub src/rioPublish.cpp)
+
+target_link_libraries(camera ntcore wpimath)
 ament_target_dependencies(camera rclcpp std_msgs custom_msgs)
+
+target_link_libraries(combiner wpimath)
 ament_target_dependencies(combiner rclcpp std_msgs custom_msgs)
-target_link_libraries(rioPub ntcore)
+
 ament_target_dependencies(network rclcpp std_msgs custom_msgs)
+
+target_link_libraries(rioPub ntcore wpimath)
 ament_target_dependencies(rioPub rclcpp std_msgs custom_msgs)
 
 install(TARGETS
