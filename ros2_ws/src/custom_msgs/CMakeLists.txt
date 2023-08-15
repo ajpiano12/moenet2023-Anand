@@ -14,10 +14,11 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/Quaternion.msg"
   "msg/Rotation3d.msg"
+  "msg/Translation3d.msg"
   "msg/Pose3d.msg"
   "msg/Pose3dStamped.msg"
-  "msg/Quaternion.msg"
   "srv/Gstam.srv"
   "srv/GetFromRio.srv"
   "srv/PublishToRio.srv"
