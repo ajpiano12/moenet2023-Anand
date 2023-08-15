@@ -1,4 +1,2 @@
-float32 x
-float32 y
-float32 z
-Quaternion q
+Translation3d t
+Rotation3d r
