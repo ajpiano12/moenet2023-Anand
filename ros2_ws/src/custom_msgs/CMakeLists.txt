@@ -12,15 +12,25 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(wpilib REQUIRED)
+
+add_library(msg_type src/*)
+target_include_directories(msg_type
+                PUBLIC
+                $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+                $<INSTALL_INTERFACE:include/msg_type>
+)
+
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Quaternion.msg"
-  "msg/Pose3D.msg"
-  "msg/Pose3DStamped.msg"
+  "msg/Rotation3d.msg"
+  "msg/Pose3d.msg"
+  "msg/Pose3dStamped.msg"
   "srv/Gstam.srv"
   "srv/GetFromRio.srv"
   "srv/PublishToRio.srv"
  )
+
 
 ament_export_dependencies(rosidl_default_runtime)
 
