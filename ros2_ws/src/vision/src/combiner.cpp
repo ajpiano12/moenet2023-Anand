@@ -24,7 +24,7 @@ Pose3D msgToPos(custom_msgs::msg::Pose3D::SharedPtr place){
 Pose3D reading1, reading2, reading3, reading4;
 Pose3D SLAM1, SLAM2, SLAM3, SLAM4;
 Pose3D odoReading;
-double acceleration;
+Pose3D acceleration;
 
 Pose3D updatePose(){
     Pose3D temp = {0,0,0,Quaternion{0,0,0,0}};
@@ -55,7 +55,7 @@ class Combiner : public rclcpp::Node{
 
             odom = this->create_subscription<custom_msgs::msg::Pose3D>
             ("/network/odom", 1, std::bind(&Combiner::odomInfo, this, _1));
-            accel = this->create_subscription<std_msgs::msg::Float64>
+            accel = this->create_subscription<custom_msgs::msg::Pose3D>
             ("/network/accel", 1, std::bind(&Combiner::accelInfo, this, _1));
 
             publisher = this->create_publisher<custom_msgs::msg::Pose3D>
@@ -75,7 +75,7 @@ class Combiner : public rclcpp::Node{
         void slam4Info(const custom_msgs::msg::Pose3D::SharedPtr msg){SLAM4 = msgToPos(msg);}
 
         void odomInfo(const custom_msgs::msg::Pose3D::SharedPtr msg){odoReading = msgToPos(msg);}
-        void accelInfo(const std_msgs::msg::Float64::SharedPtr msg){acceleration = msg->data;}
+        void accelInfo(const custom_msgs::msg::Pose3D::SharedPtr msg){acceleration = msgToPos(msg);}
 
         void publish(){
             auto message = custom_msgs::msg::Pose3D();
@@ -102,7 +102,7 @@ class Combiner : public rclcpp::Node{
     rclcpp::Subscription<custom_msgs::msg::Pose3D>::SharedPtr slam4;
 
     rclcpp::Subscription<custom_msgs::msg::Pose3D>::SharedPtr odom;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr accel;
+    rclcpp::Subscription<custom_msgs::msg::Pose3D>::SharedPtr accel;
 
     rclcpp::Publisher<custom_msgs::msg::Pose3D>::SharedPtr publisher;
 };
