@@ -14,13 +14,18 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(wpilib REQUIRED)
 
-add_library(msg_type src/*)
+file(GLOB msg_type_source
+    src/*.cpp
+)
+add_library(msg_type ${msg_type_source})
+
 target_include_directories(msg_type
                 PUBLIC
                 $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
                 $<INSTALL_INTERFACE:include/msg_type>
 )
 
+target_link_libraries(msg_type PUBLIC wpimath)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Rotation3d.msg"
