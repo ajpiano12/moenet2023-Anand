@@ -6,7 +6,7 @@ using namespace std;
 struct Quaternion{
     double w,i,j,k;
 };
-struct Pose3D{
+struct Pose3d{
     double x, y, z;
     Quaternion rot;
 };
@@ -15,16 +15,16 @@ class Camera : public rclcpp::Node{
 
     public:
         Camera() : Node(cameraID){
-            publisher = this->create_publisher<custom_msgs::msg::Pose3D>(cameraID, 1);
-            SLAMstuff = this->create_publisher<custom_msgs::msg::Pose3D>("slam", 1);
-            object = this->create_publisher<custom_msgs::msg::Pose3D>("obj", 1);
+            publisher = this->create_publisher<custom_msgs::msg::Pose3d>(cameraID, 1);
+            SLAMstuff = this->create_publisher<custom_msgs::msg::Pose3d>("slam", 1);
+            object = this->create_publisher<custom_msgs::msg::Pose3d>("obj", 1);
             update();
             //timer = this->create_wall_timer(50ms, std::bind(&Camera::update, this));
         }
     private:
         void update(){
-            auto message = custom_msgs::msg::Pose3D();
-            Pose3D tempe = Pose3D{0,0,0,Quaternion{0,0,0,0}};
+            auto message = custom_msgs::msg::Pose3d();
+            Pose3d tempe = Pose3d{0,0,0,Quaternion{0,0,0,0}};
             message.x = tempe.x;
             message.y = tempe.y;
             message.z = tempe.z;
@@ -37,9 +37,9 @@ class Camera : public rclcpp::Node{
             SLAMstuff->publish(message);
             object->publish(message);
         }
-    rclcpp::Publisher<custom_msgs::msg::Pose3D>::SharedPtr publisher;
-    rclcpp::Publisher<custom_msgs::msg::Pose3D>::SharedPtr SLAMstuff;
-    rclcpp::Publisher<custom_msgs::msg::Pose3D>::SharedPtr object;
+    rclcpp::Publisher<custom_msgs::msg::Pose3d>::SharedPtr publisher;
+    rclcpp::Publisher<custom_msgs::msg::Pose3d>::SharedPtr SLAMstuff;
+    rclcpp::Publisher<custom_msgs::msg::Pose3d>::SharedPtr object;
     //rclcpp::TimerBase::SharedPtr timer;
 };
 
