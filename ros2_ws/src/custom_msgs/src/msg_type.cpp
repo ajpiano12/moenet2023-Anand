@@ -15,19 +15,20 @@
 namespace msg_type{
     frc::Quaternion Quaternion_to_type(custom_msgs::msg::Quaternion& quaternion){
         float w = quaternion.w, i = quaternion.i, j = quaternion.j, k = quaternion.k;
+        return frc::Quaternion(w,i,j,k);
     }
 
     frc::Rotation3d Rotation3d_to_type(custom_msgs::msg::Rotation3d& rotation3d){
-        return frc::Rotation3d::Rotation3d(Quaternion_to_type(rotation3d.q));
+        return frc::Rotation3d(Quaternion_to_type(rotation3d.q));
     }
 
     frc::Translation3d Translation3d_to_type(custom_msgs::msg::Translation3d& translation3d){
         float x = translation3d.x, y = translation3d.y, z = translation3d.z;
-        return frc::Translation3d::Translation3d(x,y,z);
+        return frc::Translation3d(x,y,z);
     }
 
     frc::Pose3d Pose3d_to_type(custom_msgs::msg::Pose3d& pose3d){
-        return frc::Pose3d::Pose3d(
+        return frc::Pose3d(
             Translation3d_to_type(pose3d.t),
             Rotation3d_to_type(pose3d.r));
     }
