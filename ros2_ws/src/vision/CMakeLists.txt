@@ -20,10 +20,13 @@ add_executable(camera src/camera.cpp)
 add_executable(combiner src/combiner.cpp)
 add_executable(network src/networkTables.cpp)
 add_executable(rioPub src/rioPublish.cpp)
+add_executable(rioGet src/rioGetter.cpp)
 ament_target_dependencies(camera rclcpp std_msgs custom_msgs)
 ament_target_dependencies(combiner rclcpp std_msgs custom_msgs)
 target_link_libraries(rioPub ntcore)
+target_link_libraries(rioGet ntcore)
 ament_target_dependencies(network rclcpp std_msgs custom_msgs)
+ament_target_dependencies(rioGet rclcpp std_msgs custom_msgs)
 ament_target_dependencies(rioPub rclcpp std_msgs custom_msgs)
 
 install(TARGETS
@@ -31,6 +34,7 @@ install(TARGETS
   combiner
   network
   rioPub
+  rioGet
   DESTINATION lib/${PROJECT_NAME})
 
 

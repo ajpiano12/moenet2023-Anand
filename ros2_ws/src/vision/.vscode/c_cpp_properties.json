@@ -14,7 +14,8 @@
                 "/home/moenet/moenet2023-Anand/ros2_ws/install/allwpilib/include/**",
                 "/opt/ros/humble/include/rclcpp",
                 "/opt/ros/humble/include/rosidl_runtime_cpp",
-                "/home/moenet/moenet2023-Anand/ros2_ws/install/allwpilib/include/ntcore"
+                "/home/moenet/moenet2023-Anand/ros2_ws/install/allwpilib/include/ntcore",
+                "/opt/ros/humble/include/rosidl_runtime_c"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

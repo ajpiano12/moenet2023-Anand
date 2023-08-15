@@ -9,7 +9,7 @@ class publish{
 
     public:
         explicit publish(NT_Topic topic){
-            topic = nt::Publish(topic, NT_DOUBLE_ARRAY, "double_array");
+            pub = nt::Publish(topic, NT_DOUBLE_ARRAY, "double_array");
         }
 
         void sendInfo(const std::shared_ptr<custom_msgs::srv::PublishToRio::Request> req){
@@ -28,6 +28,7 @@ void publishPose(const std::shared_ptr<custom_msgs::srv::PublishToRio::Request> 
           std::shared_ptr<custom_msgs::srv::PublishToRio::Response>      response){
     publish sendToRio(nt::GetTopic(nt::GetDefaultInstance(), "pose"));
     sendToRio.sendInfo(request);
+    response->b = true;
 }
 
 
