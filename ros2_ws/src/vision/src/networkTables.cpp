@@ -27,7 +27,7 @@ class NetworkTable : public rclcpp::Node{
     public:
         NetworkTable() : Node("network_table"){
             odometry = this->create_publisher<custom_msgs::msg::Pose3D>("odom", 1);
-            accel = this-> create_publisher<std_msgs::msg::Float64>("accel", 1);
+            accel = this-> create_publisher<custom_msgs::msg::Pose3D>("accel", 1);
 
             bestPose = this->create_subscription<custom_msgs::msg::Pose3D>
             ("/combiner/combinedPose", 1, std::bind(&NetworkTable :: poseUpdate, this, _1));
@@ -48,7 +48,7 @@ class NetworkTable : public rclcpp::Node{
         }
         void update(){
             auto message = custom_msgs::msg::Pose3D();
-            auto acceler = std_msgs::msg::Float64();
+            auto acceler = custom_msgs::msg::Pose3D();
             odometry->publish(message);
             accel->publish(acceler);
         }
@@ -56,7 +56,7 @@ class NetworkTable : public rclcpp::Node{
     rclcpp::Subscription<custom_msgs::msg::Pose3D>::SharedPtr bestPose;
 
     rclcpp::Publisher<custom_msgs::msg::Pose3D>::SharedPtr odometry;
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr accel;
+    rclcpp::Publisher<custom_msgs::msg::Pose3D>::SharedPtr accel;
 
     rclcpp::Client<custom_msgs::srv::PublishToRio>::SharedPtr client;
    
