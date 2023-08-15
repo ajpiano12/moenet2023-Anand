@@ -12,6 +12,8 @@
 #include "frc/geometry/Translation3d.h"
 #include "custom_msgs/msg/translation3d.hpp"
 
+#include <units/length.h>
+
 namespace msg_type{
     frc::Quaternion Quaternion_to_type(custom_msgs::msg::Quaternion& quaternion){
         float w = quaternion.w, i = quaternion.i, j = quaternion.j, k = quaternion.k;
@@ -24,7 +26,10 @@ namespace msg_type{
 
     frc::Translation3d Translation3d_to_type(custom_msgs::msg::Translation3d& translation3d){
         float x = translation3d.x, y = translation3d.y, z = translation3d.z;
-        return frc::Translation3d(x,y,z);
+        return frc::Translation3d{
+            units::meter_t{x},
+            units::meter_t{y},
+            units::meter_t{z}};
     }
 
     frc::Pose3d Pose3d_to_type(custom_msgs::msg::Pose3d& pose3d){
