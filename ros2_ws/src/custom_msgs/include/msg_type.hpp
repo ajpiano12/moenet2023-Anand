@@ -2,7 +2,7 @@
 #define __MSG_TYPE_HPP__
 
 #include "frc/geometry/Pose3d.h"
-#include "msg/pose3d.hpp"
+#include "custom_msgs/msg/pose3d.hpp"
 
 #include "frc/geometry/Rotation3d.h"
 #include "custom_msgs/msg/rotation3d.hpp"

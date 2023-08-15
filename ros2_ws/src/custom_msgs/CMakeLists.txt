@@ -31,6 +31,7 @@ file(GLOB msg_type_source
     src/*.cpp
 )
 add_library(msg_type ${msg_type_source})
+rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 target_include_directories(msg_type
                 PUBLIC
@@ -38,6 +39,7 @@ target_include_directories(msg_type
                 $<INSTALL_INTERFACE:include/msg_type>
 )
 
-target_link_libraries(msg_type PUBLIC wpimath)
+target_link_libraries(msg_type "${cpp_typesupport_target}" wpimath) 
+#target_link_libraries(msg_type PUBLIC wpimath)
 
 ament_package()

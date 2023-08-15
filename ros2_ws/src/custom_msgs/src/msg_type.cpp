@@ -1,7 +1,7 @@
 #include "msg_type.hpp"
 
 #include "frc/geometry/Pose3d.h"
-#include "msg/pose3d.hpp"
+#include "custom_msgs/msg/pose3d.hpp"
 
 #include "frc/geometry/Rotation3d.h"
 #include "frc/geometry/Quaternion.h"
