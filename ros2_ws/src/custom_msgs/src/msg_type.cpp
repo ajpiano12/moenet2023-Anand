@@ -26,10 +26,10 @@ namespace msg_type{
 
     frc::Translation3d Translation3d_to_type(custom_msgs::msg::Translation3d& translation3d){
         float x = translation3d.x, y = translation3d.y, z = translation3d.z;
-        return frc::Translation3d{
+        return frc::Translation3d(
             units::meter_t{x},
             units::meter_t{y},
-            units::meter_t{z}};
+            units::meter_t{z});
     }
 
     frc::Pose3d Pose3d_to_type(custom_msgs::msg::Pose3d& pose3d){
