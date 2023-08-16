@@ -1,5 +1,5 @@
 //subscriber node to get info from network tables and cam nodes
-#include "custom_msgs/msg/pose3_d.hpp"
+#include "custom_msgs/msg/pose3d.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/float64.hpp"
 #define  _1 std::placeholders::_1
@@ -80,14 +80,6 @@ class Combiner : public rclcpp::Node{
         void publish(){
             auto message = custom_msgs::msg::Pose3d();
             Pose3d tempe = updatePose();
-            message.x = tempe.x;
-            message.y = tempe.y;
-            message.z = tempe.z;
-            message.w.w = tempe.rot.w;
-            message.w.i = tempe.rot.i;
-            message.w.j = tempe.rot.j;
-            message.w.k = tempe.rot.k;
-            //TODO:add some debug statements maybe
             publisher->publish(message);
         }
 
