@@ -1,0 +1,13 @@
+{
+  "package_name": "custom_msgs",
+  "non_idl_tuples": [
+    "/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs:msg/Quaternion.msg",
+    "/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs:msg/Rotation3d.msg",
+    "/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs:msg/Translation3d.msg",
+    "/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs:msg/Pose3d.msg",
+    "/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs:msg/Pose3dStamped.msg",
+    "/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs:srv/Gstam.srv",
+    "/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs:srv/GetFromRio.srv",
+    "/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs:srv/PublishToRio.srv"
+  ]
+}

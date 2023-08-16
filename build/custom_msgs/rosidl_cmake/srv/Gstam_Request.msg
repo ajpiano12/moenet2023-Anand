@@ -1,0 +1,10 @@
+Pose3d a
+Pose3d b
+Pose3d c
+Pose3d d
+Pose3d e
+Pose3d f
+Pose3d g
+Pose3d h
+Pose3d i
+float64 j

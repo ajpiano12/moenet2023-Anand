@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_msgs/srv/PublishToRio.srv
+// generated code does not contain a copyright notice
+
+#include "custom_msgs/msg/Pose3d.idl"
+
+module custom_msgs {
+  module srv {
+    struct PublishToRio_Request {
+      custom_msgs::msg::Pose3d a;
+    };
+    struct PublishToRio_Response {
+      boolean b;
+    };
+  };
+};

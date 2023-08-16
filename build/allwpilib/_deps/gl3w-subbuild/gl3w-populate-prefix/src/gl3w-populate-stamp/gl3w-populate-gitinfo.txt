@@ -1,0 +1,3 @@
+repository='https://github.com/skaslev/gl3w'
+module=''
+tag='origin'

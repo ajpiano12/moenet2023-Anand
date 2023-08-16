@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_msgs/srv/Gstam.srv
+// generated code does not contain a copyright notice
+
+#include "custom_msgs/msg/Pose3d.idl"
+
+module custom_msgs {
+  module srv {
+    struct Gstam_Request {
+      custom_msgs::msg::Pose3d a;
+
+      custom_msgs::msg::Pose3d b;
+
+      custom_msgs::msg::Pose3d c;
+
+      custom_msgs::msg::Pose3d d;
+
+      custom_msgs::msg::Pose3d e;
+
+      custom_msgs::msg::Pose3d f;
+
+      custom_msgs::msg::Pose3d g;
+
+      custom_msgs::msg::Pose3d h;
+
+      custom_msgs::msg::Pose3d i;
+
+      double j;
+    };
+    struct Gstam_Response {
+      custom_msgs::msg::Pose3d final;
+    };
+  };
+};

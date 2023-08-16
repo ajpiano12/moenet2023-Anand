@@ -1,0 +1,8 @@
+/home/moenet/moenet2023-Anand/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Quaternion.idl
+/home/moenet/moenet2023-Anand/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Rotation3d.idl
+/home/moenet/moenet2023-Anand/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Translation3d.idl
+/home/moenet/moenet2023-Anand/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Pose3d.idl
+/home/moenet/moenet2023-Anand/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Pose3dStamped.idl
+/home/moenet/moenet2023-Anand/build/custom_msgs/rosidl_adapter/custom_msgs:srv/Gstam.idl
+/home/moenet/moenet2023-Anand/build/custom_msgs/rosidl_adapter/custom_msgs:srv/GetFromRio.idl
+/home/moenet/moenet2023-Anand/build/custom_msgs/rosidl_adapter/custom_msgs:srv/PublishToRio.idl

@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/wpilibsuite/thirdparty-fonts/releases/download/v0.2/fonts.zip'
+tag='SHA256=cedf365657fab0770e11f72d49e4f0f889f564d2e635a4d214029d0ab6bcd324'

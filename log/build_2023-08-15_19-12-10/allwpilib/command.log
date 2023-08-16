@@ -1,0 +1,1 @@
+Invoking command in '/home/moenet/moenet2023-Anand/build/allwpilib': /usr/bin/cmake /home/moenet/moenet2023-Anand/ros2_ws/src/third_party/allwpilib -DCMAKE_INSTALL_PREFIX=/home/moenet/moenet2023-Anand/install/allwpilib

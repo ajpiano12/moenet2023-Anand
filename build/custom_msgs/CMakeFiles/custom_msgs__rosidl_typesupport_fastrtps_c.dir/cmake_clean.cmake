@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose3d__type_support_c.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose3d__type_support_c.cpp.o.d"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose3d_stamped__type_support_c.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose3d_stamped__type_support_c.cpp.o.d"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/quaternion__type_support_c.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/quaternion__type_support_c.cpp.o.d"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rotation3d__type_support_c.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rotation3d__type_support_c.cpp.o.d"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/translation3d__type_support_c.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/translation3d__type_support_c.cpp.o.d"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/get_from_rio__type_support_c.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/get_from_rio__type_support_c.cpp.o.d"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/gstam__type_support_c.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/gstam__type_support_c.cpp.o.d"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/publish_to_rio__type_support_c.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/publish_to_rio__type_support_c.cpp.o.d"
+  "libcustom_msgs__rosidl_typesupport_fastrtps_c.pdb"
+  "libcustom_msgs__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose3d__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose3d__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose3d_stamped__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose3d_stamped__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/quaternion__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/quaternion__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rotation3d__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rotation3d__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/translation3d__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/translation3d__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/get_from_rio__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/get_from_rio__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/gstam__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/gstam__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/publish_to_rio__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/publish_to_rio__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

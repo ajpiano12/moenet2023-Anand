@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/CMakeFiles/fonts-populate"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/CMakeFiles/fonts-populate.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/CMakeFiles/fonts-populate-complete.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/fonts-populate-prefix/src/fonts-populate-stamp/fonts-populate-build.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/fonts-populate-prefix/src/fonts-populate-stamp/fonts-populate-configure.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/fonts-populate-prefix/src/fonts-populate-stamp/fonts-populate-download.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/fonts-populate-prefix/src/fonts-populate-stamp/fonts-populate-install.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/fonts-populate-prefix/src/fonts-populate-stamp/fonts-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/fonts-populate-prefix/src/fonts-populate-stamp/fonts-populate-patch.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/fonts-populate-prefix/src/fonts-populate-stamp/fonts-populate-test.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/fonts-subbuild/fonts-populate-prefix/src/fonts-populate-stamp/fonts-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fonts-populate"
+		],
+		"name" : "fonts-populate"
+	}
+}

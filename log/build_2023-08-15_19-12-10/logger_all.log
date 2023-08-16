@@ -1,0 +1,232 @@
+[0.264s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.264s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f8668b55ba0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8669343430>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8669343430>>)
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.296s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/moenet/moenet2023-Anand'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ros'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['cmake', 'python']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'cmake'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['python_setup_py']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python_setup_py'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) ignored
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) ignored
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) ignored
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ros'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['cmake', 'python']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'cmake'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['python_setup_py']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python_setup_py'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_msgs) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_msgs) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_msgs) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_msgs) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_msgs) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_msgs) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_msgs) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_msgs) by extension 'ros'
+[0.308s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extension 'ignore_ament_install'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extensions ['colcon_pkg']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extension 'colcon_pkg'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extension 'ros'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extensions ['cmake', 'python']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extension 'cmake'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extension 'python'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extensions ['python_setup_py']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch) by extension 'python_setup_py'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extension 'ros'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extensions ['cmake', 'python']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extension 'cmake'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extension 'python'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extensions ['python_setup_py']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/launch/__pycache__) by extension 'python_setup_py'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extension 'ros'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extensions ['cmake', 'python']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extension 'cmake'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extension 'python'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extensions ['python_setup_py']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party) by extension 'python_setup_py'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extension 'ros'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extensions ['cmake', 'python']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extension 'cmake'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/third_party/allwpilib) by extension 'python'
+[0.365s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/third_party/allwpilib' with type 'cmake' and name 'allwpilib'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision) by extension 'ignore'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision) by extension 'ignore_ament_install'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision) by extensions ['colcon_pkg']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision) by extension 'colcon_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision) by extensions ['colcon_meta']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision) by extension 'colcon_meta'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision) by extensions ['ros']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/vision) by extension 'ros'
+[0.365s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/vision' with type 'ros.ament_cmake' and name 'vision'
+[0.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.385s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/moenet/moenet2023-Anand/ros2_ws/install
+[0.386s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'allwpilib' build argument 'cmake_args' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'allwpilib' build argument 'cmake_target' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'allwpilib' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'allwpilib' build argument 'cmake_clean_cache' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'allwpilib' build argument 'cmake_clean_first' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'allwpilib' build argument 'cmake_force_configure' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'allwpilib' build argument 'ament_cmake_args' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'allwpilib' build argument 'catkin_cmake_args' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'allwpilib' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.417s] DEBUG:colcon.colcon_core.verb:Building package 'allwpilib' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/moenet/moenet2023-Anand/build/allwpilib', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/moenet/moenet2023-Anand/install/allwpilib', 'merge_install': False, 'path': '/home/moenet/moenet2023-Anand/ros2_ws/src/third_party/allwpilib', 'symlink_install': False, 'test_result_base': None}
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.418s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/moenet/moenet2023-Anand/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/moenet/moenet2023-Anand/install/custom_msgs', 'merge_install': False, 'path': '/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_target' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.419s] DEBUG:colcon.colcon_core.verb:Building package 'vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/moenet/moenet2023-Anand/build/vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/moenet/moenet2023-Anand/install/vision', 'merge_install': False, 'path': '/home/moenet/moenet2023-Anand/ros2_ws/src/vision', 'symlink_install': False, 'test_result_base': None}
+[0.419s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.421s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.421s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs' with build type 'ament_cmake'
+[0.421s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs'
+[0.425s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.425s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.425s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.427s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/moenet/moenet2023-Anand/ros2_ws/src/third_party/allwpilib'
+[0.428s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.428s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moenet/moenet2023-Anand/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/moenet/moenet2023-Anand/install/custom_msgs
+[0.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moenet/moenet2023-Anand/build/allwpilib': /usr/bin/cmake /home/moenet/moenet2023-Anand/ros2_ws/src/third_party/allwpilib -DCMAKE_INSTALL_PREFIX=/home/moenet/moenet2023-Anand/install/allwpilib
+[1.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moenet/moenet2023-Anand/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/moenet/moenet2023-Anand/install/custom_msgs
+[1.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/moenet/moenet2023-Anand/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/moenet/moenet2023-Anand/build/custom_msgs -- -j16 -l16
+[3.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/moenet/moenet2023-Anand/build/custom_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/moenet/moenet2023-Anand/build/custom_msgs -- -j16 -l16
+[3.603s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[3.609s] Level 1:colcon.colcon_core.environment:checking '/home/moenet/moenet2023-Anand/install/custom_msgs' for CMake module files
+[3.609s] Level 1:colcon.colcon_core.environment:checking '/home/moenet/moenet2023-Anand/install/custom_msgs' for CMake config files
+[3.609s] Level 1:colcon.colcon_core.environment:checking '/home/moenet/moenet2023-Anand/install/custom_msgs/bin'
+[3.609s] Level 1:colcon.colcon_core.environment:checking '/home/moenet/moenet2023-Anand/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[3.610s] Level 1:colcon.colcon_core.environment:checking '/home/moenet/moenet2023-Anand/install/custom_msgs/lib/python3.10/site-packages'
+[3.610s] Level 1:colcon.colcon_core.environment:checking '/home/moenet/moenet2023-Anand/install/custom_msgs/bin'
+[3.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/moenet/moenet2023-Anand/install/custom_msgs/share/custom_msgs/package.ps1'
+[3.611s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/moenet/moenet2023-Anand/install/custom_msgs/share/custom_msgs/package.dsv'
+[3.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/moenet/moenet2023-Anand/install/custom_msgs/share/custom_msgs/package.sh'
+[3.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/moenet/moenet2023-Anand/install/custom_msgs/share/custom_msgs/package.bash'
+[3.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/moenet/moenet2023-Anand/install/custom_msgs/share/custom_msgs/package.zsh'
+[3.613s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/moenet/moenet2023-Anand/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[51.215s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete was interrupted
+[51.215s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete again
+[51.235s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished
+[51.235s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[51.235s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[51.236s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[51.249s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[51.249s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[51.249s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[51.274s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[51.275s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/moenet/moenet2023-Anand/install/local_setup.ps1'
+[51.275s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/moenet/moenet2023-Anand/install/_local_setup_util_ps1.py'
+[51.276s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/moenet/moenet2023-Anand/install/setup.ps1'
+[51.277s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/moenet/moenet2023-Anand/install/local_setup.sh'
+[51.278s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/moenet/moenet2023-Anand/install/_local_setup_util_sh.py'
+[51.278s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/moenet/moenet2023-Anand/install/setup.sh'
+[51.279s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/moenet/moenet2023-Anand/install/local_setup.bash'
+[51.279s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/moenet/moenet2023-Anand/install/setup.bash'
+[51.280s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/moenet/moenet2023-Anand/install/local_setup.zsh'
+[51.280s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/moenet/moenet2023-Anand/install/setup.zsh'

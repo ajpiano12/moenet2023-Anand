@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/Rotation3d.msg
+// generated code does not contain a copyright notice
+
+#include "custom_msgs/msg/Quaternion.idl"
+
+module custom_msgs {
+  module msg {
+    struct Rotation3d {
+      custom_msgs::msg::Quaternion q;
+    };
+  };
+};

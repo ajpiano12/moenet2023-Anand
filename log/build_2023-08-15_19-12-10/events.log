@@ -1,0 +1,709 @@
+[0.000000] (-) TimerEvent: {}
+[0.000111] (allwpilib) JobQueued: {'identifier': 'allwpilib', 'dependencies': OrderedDict()}
+[0.000135] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.000144] (vision) JobQueued: {'identifier': 'vision', 'dependencies': OrderedDict([('custom_msgs', '/home/moenet/moenet2023-Anand/install/custom_msgs')])}
+[0.000169] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.007389] (allwpilib) JobStarted: {'identifier': 'allwpilib'}
+[0.010007] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.010145] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/moenet/moenet2023-Anand/install/custom_msgs'], 'cwd': '/home/moenet/moenet2023-Anand/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'moenet'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/vision/lib:/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs/lib:/home/moenet/moenet2023-Anand/ros2_ws/install/allwpilib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/moenet'), ('OLDPWD', '/home/moenet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'moenet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'moenet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/moenet:@/tmp/.ICE-unix/2160,unix/moenet:/tmp/.ICE-unix/2160'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b3e2d8cc_0914_48c9_8cf8_8f8e900dc538'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/vision:/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/moenet/moenet2023-Anand/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/vision:/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs:/home/moenet/moenet2023-Anand/ros2_ws/install/allwpilib:/opt/ros/humble')]), 'shell': False}
+[0.012805] (allwpilib) JobProgress: {'identifier': 'allwpilib', 'progress': 'cmake'}
+[0.013016] (allwpilib) Command: {'cmd': ['/usr/bin/cmake', '/home/moenet/moenet2023-Anand/ros2_ws/src/third_party/allwpilib', '-DCMAKE_INSTALL_PREFIX=/home/moenet/moenet2023-Anand/install/allwpilib'], 'cwd': '/home/moenet/moenet2023-Anand/build/allwpilib', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'moenet'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/vision/lib:/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs/lib:/home/moenet/moenet2023-Anand/ros2_ws/install/allwpilib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/moenet'), ('OLDPWD', '/home/moenet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'moenet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'moenet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/moenet:@/tmp/.ICE-unix/2160,unix/moenet:/tmp/.ICE-unix/2160'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b3e2d8cc_0914_48c9_8cf8_8f8e900dc538'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/vision:/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/moenet/moenet2023-Anand/build/allwpilib'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/vision:/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs:/home/moenet/moenet2023-Anand/ros2_ws/install/allwpilib')]), 'shell': False}
+[0.099353] (-) TimerEvent: {}
+[0.108759] (allwpilib) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.108905] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.175762] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.176660] (allwpilib) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.182425] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.182572] (allwpilib) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199573] (-) TimerEvent: {}
+[0.226566] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.226725] (allwpilib) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.231261] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.231411] (allwpilib) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.231604] (allwpilib) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.231763] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.232025] (allwpilib) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.232250] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.234414] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.234573] (allwpilib) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.282797] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.283034] (allwpilib) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.287506] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.287652] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.287814] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.288556] (allwpilib) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.288701] (allwpilib) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.288806] (allwpilib) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.289063] (allwpilib) StdoutLine: {'line': b'-- Platform version: \n'}
+[0.290799] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299778] (-) TimerEvent: {}
+[0.301037] (allwpilib) StdoutLine: {'line': b'-- Found LIBSSH: /usr/include (found suitable version "0.9.6", minimum required is "0.7.1") \n'}
+[0.398421] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.399872] (-) TimerEvent: {}
+[0.458804] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.461291] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.466225] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.497085] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500098] (-) TimerEvent: {}
+[0.600479] (-) TimerEvent: {}
+[0.686381] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.700698] (-) TimerEvent: {}
+[0.796115] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.800914] (-) TimerEvent: {}
+[0.901374] (-) TimerEvent: {}
+[0.935043] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.948680] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[0.949798] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.966239] (custom_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[0.966343] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.966375] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.966402] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.978805] (custom_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.000358] (custom_msgs) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.001348] (-) TimerEvent: {}
+[1.044965] (custom_msgs) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.045303] (custom_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.088389] (custom_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.089334] (custom_msgs) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.101556] (-) TimerEvent: {}
+[1.110123] (custom_msgs) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[1.184483] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.201793] (-) TimerEvent: {}
+[1.205879] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.207161] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/moenet/moenet2023-Anand/build/custom_msgs\n'}
+[1.212958] (custom_msgs) CommandEnded: {'returncode': 0}
+[1.213435] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[1.214714] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/moenet/moenet2023-Anand/build/custom_msgs', '--', '-j16', '-l16'], 'cwd': '/home/moenet/moenet2023-Anand/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'moenet'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/vision/lib:/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs/lib:/home/moenet/moenet2023-Anand/ros2_ws/install/allwpilib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/moenet'), ('OLDPWD', '/home/moenet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'moenet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'moenet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/moenet:@/tmp/.ICE-unix/2160,unix/moenet:/tmp/.ICE-unix/2160'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b3e2d8cc_0914_48c9_8cf8_8f8e900dc538'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/vision:/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/moenet/moenet2023-Anand/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/moenet/moenet2023-Anand/ros2_ws/install/vision:/home/moenet/moenet2023-Anand/ros2_ws/install/custom_msgs:/home/moenet/moenet2023-Anand/ros2_ws/install/allwpilib:/opt/ros/humble')]), 'shell': False}
+[1.238855] (custom_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.245178] (custom_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.250923] (custom_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[1.301994] (-) TimerEvent: {}
+[1.390572] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.390823] (custom_msgs) StdoutLine: {'line': b'creating custom_msgs.egg-info\n'}
+[1.391103] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[1.391306] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[1.391394] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[1.391459] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[1.392853] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[1.393065] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[1.402115] (-) TimerEvent: {}
+[1.410201] (custom_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[1.502353] (-) TimerEvent: {}
+[1.602763] (-) TimerEvent: {}
+[1.608611] (custom_msgs) StdoutLine: {'line': b'[  2%] Built target custom_msgs__cpp\n'}
+[1.616053] (custom_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.616335] (custom_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.616445] (custom_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.650503] (custom_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/pose3d__functions.c.o\x1b[0m\n'}
+[1.651627] (custom_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/quaternion__functions.c.o\x1b[0m\n'}
+[1.651796] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/rotation3d__functions.c.o\x1b[0m\n'}
+[1.651885] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/translation3d__functions.c.o\x1b[0m\n'}
+[1.652079] (custom_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/pose3d_stamped__functions.c.o\x1b[0m\n'}
+[1.652301] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/gstam__functions.c.o\x1b[0m\n'}
+[1.652432] (custom_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/publish_to_rio__functions.c.o\x1b[0m\n'}
+[1.652547] (custom_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/get_from_rio__functions.c.o\x1b[0m\n'}
+[1.702977] (-) TimerEvent: {}
+[1.709633] (custom_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.735862] (custom_msgs) StdoutLine: {'line': b'[ 15%] Built target custom_msgs__rosidl_generator_c\n'}
+[1.742784] (custom_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.744761] (custom_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.744888] (custom_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.803095] (-) TimerEvent: {}
+[1.898526] (custom_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/quaternion__type_support.cpp.o\x1b[0m\n'}
+[1.899197] (custom_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/pose3d__type_support.cpp.o\x1b[0m\n'}
+[1.899317] (custom_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/translation3d__type_support.cpp.o\x1b[0m\n'}
+[1.899363] (custom_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/rotation3d__type_support.cpp.o\x1b[0m\n'}
+[1.899399] (custom_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/pose3d_stamped__type_support.cpp.o\x1b[0m\n'}
+[1.899590] (custom_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/srv/get_from_rio__type_support.cpp.o\x1b[0m\n'}
+[1.899673] (custom_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/srv/gstam__type_support.cpp.o\x1b[0m\n'}
+[1.900247] (custom_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/srv/publish_to_rio__type_support.cpp.o\x1b[0m\n'}
+[1.903241] (-) TimerEvent: {}
+[2.003572] (-) TimerEvent: {}
+[2.015716] (custom_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/quaternion__type_support.cpp.o\x1b[0m\n'}
+[2.021752] (custom_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/rotation3d__type_support.cpp.o\x1b[0m\n'}
+[2.025872] (custom_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/translation3d__type_support.cpp.o\x1b[0m\n'}
+[2.077978] (custom_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/pose3d__type_support.cpp.o\x1b[0m\n'}
+[2.095681] (custom_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/quaternion__type_support.cpp.o\x1b[0m\n'}
+[2.103685] (-) TimerEvent: {}
+[2.204101] (-) TimerEvent: {}
+[2.216252] (custom_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/rotation3d__type_support.cpp.o\x1b[0m\n'}
+[2.231396] (custom_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/rotation3d__type_support.cpp.o\x1b[0m\n'}
+[2.232492] (custom_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/pose3d_stamped__type_support.cpp.o\x1b[0m\n'}
+[2.234672] (custom_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/quaternion__type_support.cpp.o\x1b[0m\n'}
+[2.235898] (custom_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/srv/detail/gstam__type_support.cpp.o\x1b[0m\n'}
+[2.241263] (custom_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.244232] (custom_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/translation3d__type_support.cpp.o\x1b[0m\n'}
+[2.256972] (custom_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/pose3d__type_support.cpp.o\x1b[0m\n'}
+[2.260443] (custom_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/srv/detail/get_from_rio__type_support.cpp.o\x1b[0m\n'}
+[2.274763] (custom_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/pose3d_stamped__type_support.cpp.o\x1b[0m\n'}
+[2.279520] (custom_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/gstam__type_support.cpp.o\x1b[0m\n'}
+[2.289984] (custom_msgs) StdoutLine: {'line': b'[ 46%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[2.291677] (custom_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/get_from_rio__type_support.cpp.o\x1b[0m\n'}
+[2.297599] (custom_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/pose3d__type_support.cpp.o\x1b[0m\n'}
+[2.298279] (custom_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/translation3d__type_support.cpp.o\x1b[0m\n'}
+[2.304228] (-) TimerEvent: {}
+[2.307026] (custom_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/pose3d_stamped__type_support.cpp.o\x1b[0m\n'}
+[2.309784] (custom_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/quaternion__type_support_c.cpp.o\x1b[0m\n'}
+[2.321665] (custom_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/publish_to_rio__type_support.cpp.o\x1b[0m\n'}
+[2.331139] (custom_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/srv/detail/dds_fastrtps/gstam__type_support.cpp.o\x1b[0m\n'}
+[2.376858] (custom_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.395936] (custom_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/quaternion__type_support.c.o\x1b[0m\n'}
+[2.404353] (-) TimerEvent: {}
+[2.435194] (custom_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/rotation3d__type_support.c.o\x1b[0m\n'}
+[2.435568] (custom_msgs) StdoutLine: {'line': b'[ 57%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[2.446148] (custom_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/srv/detail/publish_to_rio__type_support.cpp.o\x1b[0m\n'}
+[2.447960] (custom_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/translation3d__type_support.c.o\x1b[0m\n'}
+[2.474087] (custom_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/msg_type.dir/src/msg_type.cpp.o\x1b[0m\n'}
+[2.474318] (custom_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/pose3d__type_support.c.o\x1b[0m\n'}
+[2.487558] (custom_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/pose3d_stamped__type_support.c.o\x1b[0m\n'}
+[2.501121] (custom_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/srv/detail/dds_fastrtps/get_from_rio__type_support.cpp.o\x1b[0m\n'}
+[2.504482] (-) TimerEvent: {}
+[2.511534] (custom_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/gstam__type_support.c.o\x1b[0m\n'}
+[2.526143] (custom_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/get_from_rio__type_support.c.o\x1b[0m\n'}
+[2.542901] (custom_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/srv/detail/dds_fastrtps/publish_to_rio__type_support.cpp.o\x1b[0m\n'}
+[2.554865] (custom_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/publish_to_rio__type_support.c.o\x1b[0m\n'}
+[2.556091] (custom_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/rotation3d__type_support_c.cpp.o\x1b[0m\n'}
+[2.568596] (custom_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/translation3d__type_support_c.cpp.o\x1b[0m\n'}
+[2.604616] (-) TimerEvent: {}
+[2.611071] (custom_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.659559] (custom_msgs) StdoutLine: {'line': b'[ 71%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[2.670705] (custom_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose3d__type_support_c.cpp.o\x1b[0m\n'}
+[2.695796] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose3d_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[2.704729] (custom_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/gstam__type_support_c.cpp.o\x1b[0m\n'}
+[2.704973] (-) TimerEvent: {}
+[2.706813] (custom_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/get_from_rio__type_support_c.cpp.o\x1b[0m\n'}
+[2.738221] (custom_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/publish_to_rio__type_support_c.cpp.o\x1b[0m\n'}
+[2.760532] (custom_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs/src/msg_type.cpp:1\x1b[m\x1b[K:\n'}
+[2.760744] (custom_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/moenet/moenet2023-Anand/ros2_ws/src/custom_msgs/include/msg_type.hpp:13:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kfrc/geometry/Pose3dStamped.h: No such file or directory\n'}
+[2.760846] (custom_msgs) StderrLine: {'line': b'   13 | #include \x1b[01;31m\x1b[K"frc/geometry/Pose3dStamped.h"\x1b[m\x1b[K\n'}
+[2.760936] (custom_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.761023] (custom_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[2.763408] (custom_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/msg_type.dir/build.make:76: CMakeFiles/msg_type.dir/src/msg_type.cpp.o] Error 1\n'}
+[2.763661] (custom_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/msg_type.dir/all] Error 2\n'}
+[2.763764] (custom_msgs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[2.805107] (-) TimerEvent: {}
+[2.836528] (custom_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.895975] (custom_msgs) StdoutLine: {'line': b'[ 78%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.905218] (-) TimerEvent: {}
+[2.929217] (custom_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.989610] (custom_msgs) StdoutLine: {'line': b'[ 79%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.005325] (-) TimerEvent: {}
+[3.028029] (custom_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.073152] (custom_msgs) StdoutLine: {'line': b'[ 80%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.073997] (custom_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.076257] (custom_msgs) CommandEnded: {'returncode': 2}
+[3.105401] (-) TimerEvent: {}
+[3.192029] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 2}
+[3.205483] (-) TimerEvent: {}
+[3.305778] (-) TimerEvent: {}
+[3.406257] (-) TimerEvent: {}
+[3.506731] (-) TimerEvent: {}
+[3.607328] (-) TimerEvent: {}
+[3.708018] (-) TimerEvent: {}
+[3.808600] (-) TimerEvent: {}
+[3.909161] (-) TimerEvent: {}
+[4.009557] (-) TimerEvent: {}
+[4.109836] (-) TimerEvent: {}
+[4.210139] (-) TimerEvent: {}
+[4.310520] (-) TimerEvent: {}
+[4.410855] (-) TimerEvent: {}
+[4.488769] (allwpilib) StdoutLine: {'line': b'-- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[4.489497] (allwpilib) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.511065] (-) TimerEvent: {}
+[4.530847] (allwpilib) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.531000] (allwpilib) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.572459] (allwpilib) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.573085] (allwpilib) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.611349] (-) TimerEvent: {}
+[4.640076] (allwpilib) StdoutLine: {'line': b'-- Found Java: /usr/bin/java (found version "11.0.20") \n'}
+[4.645028] (allwpilib) StdoutLine: {'line': b'-- Found JNI: /usr/lib/jvm/default-java/lib/libjawt.so  \n'}
+[4.646195] (allwpilib) StdoutLine: {'line': b'-- Downloading Jackson jarfiles...\n'}
+[4.711704] (-) TimerEvent: {}
+[4.812598] (-) TimerEvent: {}
+[4.913316] (-) TimerEvent: {}
+[5.014181] (-) TimerEvent: {}
+[5.115127] (-) TimerEvent: {}
+[5.216026] (-) TimerEvent: {}
+[5.316622] (-) TimerEvent: {}
+[5.417268] (-) TimerEvent: {}
+[5.518226] (-) TimerEvent: {}
+[5.619196] (-) TimerEvent: {}
+[5.720506] (-) TimerEvent: {}
+[5.821313] (-) TimerEvent: {}
+[5.921989] (-) TimerEvent: {}
+[6.022629] (-) TimerEvent: {}
+[6.123299] (-) TimerEvent: {}
+[6.223932] (-) TimerEvent: {}
+[6.324606] (-) TimerEvent: {}
+[6.425346] (-) TimerEvent: {}
+[6.526107] (-) TimerEvent: {}
+[6.559981] (allwpilib) StdoutLine: {'line': b'-- All files downloaded.\n'}
+[6.572901] (allwpilib) StdoutLine: {'line': b'-- Found libatomic: /usr/lib/x86_64-linux-gnu/libatomic.so.1\n'}
+[6.609890] (allwpilib) StdoutLine: {'line': b'-- Found libatomic: /usr/lib/x86_64-linux-gnu/libatomic.so.1\n'}
+[6.626241] (-) TimerEvent: {}
+[6.726523] (-) TimerEvent: {}
+[6.795437] (allwpilib) StdoutLine: {'line': b'-- Downloading EJML jarfiles...\n'}
+[6.826774] (-) TimerEvent: {}
+[6.927274] (-) TimerEvent: {}
+[7.027835] (-) TimerEvent: {}
+[7.128274] (-) TimerEvent: {}
+[7.228824] (-) TimerEvent: {}
+[7.329476] (-) TimerEvent: {}
+[7.430334] (-) TimerEvent: {}
+[7.531168] (-) TimerEvent: {}
+[7.631807] (-) TimerEvent: {}
+[7.732578] (-) TimerEvent: {}
+[7.833293] (-) TimerEvent: {}
+[7.933972] (-) TimerEvent: {}
+[8.034688] (-) TimerEvent: {}
+[8.135319] (-) TimerEvent: {}
+[8.236111] (-) TimerEvent: {}
+[8.336821] (-) TimerEvent: {}
+[8.437464] (-) TimerEvent: {}
+[8.538297] (-) TimerEvent: {}
+[8.639066] (-) TimerEvent: {}
+[8.739718] (-) TimerEvent: {}
+[8.840351] (-) TimerEvent: {}
+[8.941295] (-) TimerEvent: {}
+[9.042126] (-) TimerEvent: {}
+[9.142949] (-) TimerEvent: {}
+[9.243699] (-) TimerEvent: {}
+[9.344376] (-) TimerEvent: {}
+[9.445343] (-) TimerEvent: {}
+[9.546296] (-) TimerEvent: {}
+[9.647217] (-) TimerEvent: {}
+[9.748050] (-) TimerEvent: {}
+[9.848735] (-) TimerEvent: {}
+[9.949498] (-) TimerEvent: {}
+[9.989471] (allwpilib) StdoutLine: {'line': b'-- All files downloaded.\n'}
+[10.049677] (-) TimerEvent: {}
+[10.149950] (-) TimerEvent: {}
+[10.250329] (-) TimerEvent: {}
+[10.350807] (-) TimerEvent: {}
+[10.451607] (-) TimerEvent: {}
+[10.552436] (-) TimerEvent: {}
+[10.653299] (-) TimerEvent: {}
+[10.754208] (-) TimerEvent: {}
+[10.855095] (-) TimerEvent: {}
+[10.955984] (-) TimerEvent: {}
+[11.056775] (-) TimerEvent: {}
+[11.157770] (-) TimerEvent: {}
+[11.258722] (-) TimerEvent: {}
+[11.359668] (-) TimerEvent: {}
+[11.460599] (-) TimerEvent: {}
+[11.561460] (-) TimerEvent: {}
+[11.662106] (-) TimerEvent: {}
+[11.762716] (-) TimerEvent: {}
+[11.863356] (-) TimerEvent: {}
+[11.963980] (-) TimerEvent: {}
+[12.064537] (-) TimerEvent: {}
+[12.164944] (-) TimerEvent: {}
+[12.265481] (-) TimerEvent: {}
+[12.365953] (-) TimerEvent: {}
+[12.466481] (-) TimerEvent: {}
+[12.567027] (-) TimerEvent: {}
+[12.667593] (-) TimerEvent: {}
+[12.768095] (-) TimerEvent: {}
+[12.868679] (-) TimerEvent: {}
+[12.969240] (-) TimerEvent: {}
+[13.069680] (-) TimerEvent: {}
+[13.170257] (-) TimerEvent: {}
+[13.270850] (-) TimerEvent: {}
+[13.371436] (-) TimerEvent: {}
+[13.471928] (-) TimerEvent: {}
+[13.572491] (-) TimerEvent: {}
+[13.672986] (-) TimerEvent: {}
+[13.773430] (-) TimerEvent: {}
+[13.873952] (-) TimerEvent: {}
+[13.974384] (-) TimerEvent: {}
+[14.074908] (-) TimerEvent: {}
+[14.175416] (-) TimerEvent: {}
+[14.275946] (-) TimerEvent: {}
+[14.376478] (-) TimerEvent: {}
+[14.477003] (-) TimerEvent: {}
+[14.577510] (-) TimerEvent: {}
+[14.678090] (-) TimerEvent: {}
+[14.778589] (-) TimerEvent: {}
+[14.879007] (-) TimerEvent: {}
+[14.979527] (-) TimerEvent: {}
+[15.080130] (-) TimerEvent: {}
+[15.180674] (-) TimerEvent: {}
+[15.281258] (-) TimerEvent: {}
+[15.381704] (-) TimerEvent: {}
+[15.482289] (-) TimerEvent: {}
+[15.582835] (-) TimerEvent: {}
+[15.683429] (-) TimerEvent: {}
+[15.784106] (-) TimerEvent: {}
+[15.884720] (-) TimerEvent: {}
+[15.985302] (-) TimerEvent: {}
+[16.085719] (-) TimerEvent: {}
+[16.186243] (-) TimerEvent: {}
+[16.286675] (-) TimerEvent: {}
+[16.387294] (-) TimerEvent: {}
+[16.487857] (-) TimerEvent: {}
+[16.588215] (-) TimerEvent: {}
+[16.688832] (-) TimerEvent: {}
+[16.789342] (-) TimerEvent: {}
+[16.889817] (-) TimerEvent: {}
+[16.990365] (-) TimerEvent: {}
+[17.091011] (-) TimerEvent: {}
+[17.191541] (-) TimerEvent: {}
+[17.292141] (-) TimerEvent: {}
+[17.392710] (-) TimerEvent: {}
+[17.493258] (-) TimerEvent: {}
+[17.593778] (-) TimerEvent: {}
+[17.694183] (-) TimerEvent: {}
+[17.794717] (-) TimerEvent: {}
+[17.895180] (-) TimerEvent: {}
+[17.995657] (-) TimerEvent: {}
+[18.096203] (-) TimerEvent: {}
+[18.196864] (-) TimerEvent: {}
+[18.297412] (-) TimerEvent: {}
+[18.398055] (-) TimerEvent: {}
+[18.498569] (-) TimerEvent: {}
+[18.599108] (-) TimerEvent: {}
+[18.699619] (-) TimerEvent: {}
+[18.800229] (-) TimerEvent: {}
+[18.900930] (-) TimerEvent: {}
+[19.001394] (-) TimerEvent: {}
+[19.101934] (-) TimerEvent: {}
+[19.202504] (-) TimerEvent: {}
+[19.303030] (-) TimerEvent: {}
+[19.403581] (-) TimerEvent: {}
+[19.504141] (-) TimerEvent: {}
+[19.604719] (-) TimerEvent: {}
+[19.705289] (-) TimerEvent: {}
+[19.805853] (-) TimerEvent: {}
+[19.906429] (-) TimerEvent: {}
+[20.006971] (-) TimerEvent: {}
+[20.107574] (-) TimerEvent: {}
+[20.208134] (-) TimerEvent: {}
+[20.308690] (-) TimerEvent: {}
+[20.409262] (-) TimerEvent: {}
+[20.509851] (-) TimerEvent: {}
+[20.610358] (-) TimerEvent: {}
+[20.710938] (-) TimerEvent: {}
+[20.811504] (-) TimerEvent: {}
+[20.912103] (-) TimerEvent: {}
+[21.012671] (-) TimerEvent: {}
+[21.113277] (-) TimerEvent: {}
+[21.213734] (-) TimerEvent: {}
+[21.314335] (-) TimerEvent: {}
+[21.414884] (-) TimerEvent: {}
+[21.515461] (-) TimerEvent: {}
+[21.615941] (-) TimerEvent: {}
+[21.716376] (-) TimerEvent: {}
+[21.816939] (-) TimerEvent: {}
+[21.917552] (-) TimerEvent: {}
+[22.018182] (-) TimerEvent: {}
+[22.118667] (-) TimerEvent: {}
+[22.219030] (-) TimerEvent: {}
+[22.319534] (-) TimerEvent: {}
+[22.420021] (-) TimerEvent: {}
+[22.520573] (-) TimerEvent: {}
+[22.621128] (-) TimerEvent: {}
+[22.721736] (-) TimerEvent: {}
+[22.822374] (-) TimerEvent: {}
+[22.922914] (-) TimerEvent: {}
+[23.023504] (-) TimerEvent: {}
+[23.124076] (-) TimerEvent: {}
+[23.224564] (-) TimerEvent: {}
+[23.325117] (-) TimerEvent: {}
+[23.425578] (-) TimerEvent: {}
+[23.526126] (-) TimerEvent: {}
+[23.626685] (-) TimerEvent: {}
+[23.727221] (-) TimerEvent: {}
+[23.827708] (-) TimerEvent: {}
+[23.928301] (-) TimerEvent: {}
+[24.028833] (-) TimerEvent: {}
+[24.129255] (-) TimerEvent: {}
+[24.229674] (-) TimerEvent: {}
+[24.330337] (-) TimerEvent: {}
+[24.430925] (-) TimerEvent: {}
+[24.531520] (-) TimerEvent: {}
+[24.632138] (-) TimerEvent: {}
+[24.732644] (-) TimerEvent: {}
+[24.833106] (-) TimerEvent: {}
+[24.933541] (-) TimerEvent: {}
+[25.033975] (-) TimerEvent: {}
+[25.134459] (-) TimerEvent: {}
+[25.234953] (-) TimerEvent: {}
+[25.335397] (-) TimerEvent: {}
+[25.435824] (-) TimerEvent: {}
+[25.536259] (-) TimerEvent: {}
+[25.636689] (-) TimerEvent: {}
+[25.737117] (-) TimerEvent: {}
+[25.837426] (-) TimerEvent: {}
+[25.937853] (-) TimerEvent: {}
+[26.038293] (-) TimerEvent: {}
+[26.138723] (-) TimerEvent: {}
+[26.239150] (-) TimerEvent: {}
+[26.339583] (-) TimerEvent: {}
+[26.440028] (-) TimerEvent: {}
+[26.540456] (-) TimerEvent: {}
+[26.640891] (-) TimerEvent: {}
+[26.741333] (-) TimerEvent: {}
+[26.841765] (-) TimerEvent: {}
+[26.942213] (-) TimerEvent: {}
+[27.042610] (-) TimerEvent: {}
+[27.142904] (-) TimerEvent: {}
+[27.243137] (-) TimerEvent: {}
+[27.343557] (-) TimerEvent: {}
+[27.444126] (-) TimerEvent: {}
+[27.544896] (-) TimerEvent: {}
+[27.645572] (-) TimerEvent: {}
+[27.746344] (-) TimerEvent: {}
+[27.846851] (-) TimerEvent: {}
+[27.947352] (-) TimerEvent: {}
+[28.047759] (-) TimerEvent: {}
+[28.148134] (-) TimerEvent: {}
+[28.248549] (-) TimerEvent: {}
+[28.349093] (-) TimerEvent: {}
+[28.450092] (-) TimerEvent: {}
+[28.551035] (-) TimerEvent: {}
+[28.652057] (-) TimerEvent: {}
+[28.753026] (-) TimerEvent: {}
+[28.853927] (-) TimerEvent: {}
+[28.954748] (-) TimerEvent: {}
+[29.055520] (-) TimerEvent: {}
+[29.155926] (-) TimerEvent: {}
+[29.256313] (-) TimerEvent: {}
+[29.356766] (-) TimerEvent: {}
+[29.457374] (-) TimerEvent: {}
+[29.558410] (-) TimerEvent: {}
+[29.659199] (-) TimerEvent: {}
+[29.759811] (-) TimerEvent: {}
+[29.860445] (-) TimerEvent: {}
+[29.961307] (-) TimerEvent: {}
+[30.062235] (-) TimerEvent: {}
+[30.162849] (-) TimerEvent: {}
+[30.263478] (-) TimerEvent: {}
+[30.364017] (-) TimerEvent: {}
+[30.464594] (-) TimerEvent: {}
+[30.565267] (-) TimerEvent: {}
+[30.665910] (-) TimerEvent: {}
+[30.766503] (-) TimerEvent: {}
+[30.866914] (-) TimerEvent: {}
+[30.967299] (-) TimerEvent: {}
+[31.067674] (-) TimerEvent: {}
+[31.168260] (-) TimerEvent: {}
+[31.269244] (-) TimerEvent: {}
+[31.370154] (-) TimerEvent: {}
+[31.470896] (-) TimerEvent: {}
+[31.571860] (-) TimerEvent: {}
+[31.672936] (-) TimerEvent: {}
+[31.774213] (-) TimerEvent: {}
+[31.875279] (-) TimerEvent: {}
+[31.976357] (-) TimerEvent: {}
+[32.077469] (-) TimerEvent: {}
+[32.178689] (-) TimerEvent: {}
+[32.279791] (-) TimerEvent: {}
+[32.381032] (-) TimerEvent: {}
+[32.482211] (-) TimerEvent: {}
+[32.583145] (-) TimerEvent: {}
+[32.684044] (-) TimerEvent: {}
+[32.784624] (-) TimerEvent: {}
+[32.885255] (-) TimerEvent: {}
+[32.985849] (-) TimerEvent: {}
+[33.086446] (-) TimerEvent: {}
+[33.186969] (-) TimerEvent: {}
+[33.287598] (-) TimerEvent: {}
+[33.388267] (-) TimerEvent: {}
+[33.488876] (-) TimerEvent: {}
+[33.589576] (-) TimerEvent: {}
+[33.690145] (-) TimerEvent: {}
+[33.790696] (-) TimerEvent: {}
+[33.891346] (-) TimerEvent: {}
+[33.992253] (-) TimerEvent: {}
+[34.092875] (-) TimerEvent: {}
+[34.193515] (-) TimerEvent: {}
+[34.294219] (-) TimerEvent: {}
+[34.395072] (-) TimerEvent: {}
+[34.495793] (-) TimerEvent: {}
+[34.596597] (-) TimerEvent: {}
+[34.697275] (-) TimerEvent: {}
+[34.797918] (-) TimerEvent: {}
+[34.898563] (-) TimerEvent: {}
+[34.999135] (-) TimerEvent: {}
+[35.099786] (-) TimerEvent: {}
+[35.200445] (-) TimerEvent: {}
+[35.301113] (-) TimerEvent: {}
+[35.401743] (-) TimerEvent: {}
+[35.502441] (-) TimerEvent: {}
+[35.603074] (-) TimerEvent: {}
+[35.703730] (-) TimerEvent: {}
+[35.804412] (-) TimerEvent: {}
+[35.904988] (-) TimerEvent: {}
+[36.005366] (-) TimerEvent: {}
+[36.105733] (-) TimerEvent: {}
+[36.206117] (-) TimerEvent: {}
+[36.306538] (-) TimerEvent: {}
+[36.313257] (allwpilib) StdoutLine: {'line': b'-- Found Doxygen: /usr/bin/doxygen (found version "1.9.1") found components: doxygen \n'}
+[36.335194] (allwpilib) StdoutLine: {'line': b'-- Including X11 support\n'}
+[36.387444] (allwpilib) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[36.387785] (allwpilib) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[36.406732] (-) TimerEvent: {}
+[36.429382] (allwpilib) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[36.429539] (allwpilib) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[36.468223] (allwpilib) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[36.468376] (allwpilib) StdoutLine: {'line': b'-- Looking for connect\n'}
+[36.506820] (allwpilib) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[36.506969] (-) TimerEvent: {}
+[36.507062] (allwpilib) StdoutLine: {'line': b'-- Looking for remove\n'}
+[36.545526] (allwpilib) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[36.545686] (allwpilib) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[36.585647] (allwpilib) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[36.585800] (allwpilib) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[36.607193] (-) TimerEvent: {}
+[36.624788] (allwpilib) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[36.707411] (-) TimerEvent: {}
+[36.807958] (-) TimerEvent: {}
+[36.908915] (-) TimerEvent: {}
+[37.009983] (-) TimerEvent: {}
+[37.111258] (-) TimerEvent: {}
+[37.212511] (-) TimerEvent: {}
+[37.313657] (-) TimerEvent: {}
+[37.414678] (-) TimerEvent: {}
+[37.515707] (-) TimerEvent: {}
+[37.616763] (-) TimerEvent: {}
+[37.718117] (-) TimerEvent: {}
+[37.819051] (-) TimerEvent: {}
+[37.919930] (-) TimerEvent: {}
+[38.020638] (-) TimerEvent: {}
+[38.120956] (-) TimerEvent: {}
+[38.221261] (-) TimerEvent: {}
+[38.230543] (allwpilib) StdoutLine: {'line': b'-- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development Development.Module Development.Embed \n'}
+[38.321712] (-) TimerEvent: {}
+[38.422760] (-) TimerEvent: {}
+[38.523760] (-) TimerEvent: {}
+[38.624597] (-) TimerEvent: {}
+[38.725412] (-) TimerEvent: {}
+[38.826725] (-) TimerEvent: {}
+[38.927913] (-) TimerEvent: {}
+[39.028792] (-) TimerEvent: {}
+[39.129471] (-) TimerEvent: {}
+[39.230243] (-) TimerEvent: {}
+[39.331071] (-) TimerEvent: {}
+[39.432147] (-) TimerEvent: {}
+[39.489229] (allwpilib) StdoutLine: {'line': b'Downloading /home/moenet/moenet2023-Anand/build/allwpilib/_deps/gl3w-build/include/GL/glcorearb.h...\n'}
+[39.489405] (allwpilib) StdoutLine: {'line': b'Downloading /home/moenet/moenet2023-Anand/build/allwpilib/_deps/gl3w-build/include/KHR/khrplatform.h...\n'}
+[39.489476] (allwpilib) StdoutLine: {'line': b'Parsing glcorearb.h header...\n'}
+[39.489541] (allwpilib) StdoutLine: {'line': b'Generating /home/moenet/moenet2023-Anand/build/allwpilib/_deps/gl3w-build/include/GL/gl3w.h...\n'}
+[39.489603] (allwpilib) StdoutLine: {'line': b'Generating /home/moenet/moenet2023-Anand/build/allwpilib/_deps/gl3w-build/src/gl3w.c...\n'}
+[39.532326] (-) TimerEvent: {}
+[39.542346] (allwpilib) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[39.632548] (-) TimerEvent: {}
+[39.733092] (-) TimerEvent: {}
+[39.834014] (-) TimerEvent: {}
+[39.934444] (-) TimerEvent: {}
+[40.035357] (-) TimerEvent: {}
+[40.136280] (-) TimerEvent: {}
+[40.237245] (-) TimerEvent: {}
+[40.338189] (-) TimerEvent: {}
+[40.438919] (-) TimerEvent: {}
+[40.539663] (-) TimerEvent: {}
+[40.640000] (-) TimerEvent: {}
+[40.740354] (-) TimerEvent: {}
+[40.840629] (-) TimerEvent: {}
+[40.940983] (-) TimerEvent: {}
+[41.041304] (-) TimerEvent: {}
+[41.141500] (-) TimerEvent: {}
+[41.241744] (-) TimerEvent: {}
+[41.342061] (-) TimerEvent: {}
+[41.442308] (-) TimerEvent: {}
+[41.542594] (-) TimerEvent: {}
+[41.642907] (-) TimerEvent: {}
+[41.743196] (-) TimerEvent: {}
+[41.843511] (-) TimerEvent: {}
+[41.943816] (-) TimerEvent: {}
+[42.044140] (-) TimerEvent: {}
+[42.144468] (-) TimerEvent: {}
+[42.244799] (-) TimerEvent: {}
+[42.345123] (-) TimerEvent: {}
+[42.445357] (-) TimerEvent: {}
+[42.545619] (-) TimerEvent: {}
+[42.645877] (-) TimerEvent: {}
+[42.746218] (-) TimerEvent: {}
+[42.846525] (-) TimerEvent: {}
+[42.946891] (-) TimerEvent: {}
+[43.047264] (-) TimerEvent: {}
+[43.147570] (-) TimerEvent: {}
+[43.247867] (-) TimerEvent: {}
+[43.348167] (-) TimerEvent: {}
+[43.448446] (-) TimerEvent: {}
+[43.548806] (-) TimerEvent: {}
+[43.649160] (-) TimerEvent: {}
+[43.749427] (-) TimerEvent: {}
+[43.849721] (-) TimerEvent: {}
+[43.949961] (-) TimerEvent: {}
+[44.050290] (-) TimerEvent: {}
+[44.150600] (-) TimerEvent: {}
+[44.250918] (-) TimerEvent: {}
+[44.351303] (-) TimerEvent: {}
+[44.451675] (-) TimerEvent: {}
+[44.552019] (-) TimerEvent: {}
+[44.652333] (-) TimerEvent: {}
+[44.752664] (-) TimerEvent: {}
+[44.853014] (-) TimerEvent: {}
+[44.953285] (-) TimerEvent: {}
+[45.053636] (-) TimerEvent: {}
+[45.153933] (-) TimerEvent: {}
+[45.254224] (-) TimerEvent: {}
+[45.354537] (-) TimerEvent: {}
+[45.454857] (-) TimerEvent: {}
+[45.555187] (-) TimerEvent: {}
+[45.655535] (-) TimerEvent: {}
+[45.755877] (-) TimerEvent: {}
+[45.856205] (-) TimerEvent: {}
+[45.956490] (-) TimerEvent: {}
+[46.056808] (-) TimerEvent: {}
+[46.157123] (-) TimerEvent: {}
+[46.257367] (-) TimerEvent: {}
+[46.357561] (-) TimerEvent: {}
+[46.457808] (-) TimerEvent: {}
+[46.558192] (-) TimerEvent: {}
+[46.658499] (-) TimerEvent: {}
+[46.758917] (-) TimerEvent: {}
+[46.859214] (-) TimerEvent: {}
+[46.959531] (-) TimerEvent: {}
+[47.059875] (-) TimerEvent: {}
+[47.160222] (-) TimerEvent: {}
+[47.260549] (-) TimerEvent: {}
+[47.360899] (-) TimerEvent: {}
+[47.461218] (-) TimerEvent: {}
+[47.561431] (-) TimerEvent: {}
+[47.661723] (-) TimerEvent: {}
+[47.762065] (-) TimerEvent: {}
+[47.862382] (-) TimerEvent: {}
+[47.962673] (-) TimerEvent: {}
+[48.062965] (-) TimerEvent: {}
+[48.163259] (-) TimerEvent: {}
+[48.263582] (-) TimerEvent: {}
+[48.363865] (-) TimerEvent: {}
+[48.464192] (-) TimerEvent: {}
+[48.564508] (-) TimerEvent: {}
+[48.664964] (-) TimerEvent: {}
+[48.765457] (-) TimerEvent: {}
+[48.866001] (-) TimerEvent: {}
+[48.966700] (-) TimerEvent: {}
+[49.067446] (-) TimerEvent: {}
+[49.167981] (-) TimerEvent: {}
+[49.268557] (-) TimerEvent: {}
+[49.369357] (-) TimerEvent: {}
+[49.469732] (-) TimerEvent: {}
+[49.570091] (-) TimerEvent: {}
+[49.670517] (-) TimerEvent: {}
+[49.771113] (-) TimerEvent: {}
+[49.871682] (-) TimerEvent: {}
+[49.972368] (-) TimerEvent: {}
+[50.072940] (-) TimerEvent: {}
+[50.173352] (-) TimerEvent: {}
+[50.273789] (-) TimerEvent: {}
+[50.374373] (-) TimerEvent: {}
+[50.474977] (-) TimerEvent: {}
+[50.575544] (-) TimerEvent: {}
+[50.676086] (-) TimerEvent: {}
+[50.776655] (-) TimerEvent: {}
+[50.803491] (allwpilib) JobEnded: {'identifier': 'allwpilib', 'rc': 'SIGINT'}
+[50.815304] (vision) JobSkipped: {'identifier': 'vision'}
+[50.815448] (-) EventReactorShutdown: {}

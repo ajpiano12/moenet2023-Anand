@@ -1,0 +1,51 @@
+[0.006s] Invoking command in '/home/moenet/moenet2023-Anand/build/allwpilib': /usr/bin/cmake /home/moenet/moenet2023-Anand/ros2_ws/src/third_party/allwpilib -DCMAKE_INSTALL_PREFIX=/home/moenet/moenet2023-Anand/install/allwpilib
+[0.101s] -- The C compiler identification is GNU 11.4.0
+[0.169s] -- The CXX compiler identification is GNU 11.4.0
+[0.175s] -- Detecting C compiler ABI info
+[0.219s] -- Detecting C compiler ABI info - done
+[0.224s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.224s] -- Detecting C compile features
+[0.225s] -- Detecting C compile features - done
+[0.227s] -- Detecting CXX compiler ABI info
+[0.276s] -- Detecting CXX compiler ABI info - done
+[0.281s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.281s] -- Detecting CXX compile features
+[0.281s] -- Detecting CXX compile features - done
+[0.282s] -- Platform version: 
+[0.294s] -- Found LIBSSH: /usr/include (found suitable version "0.9.6", minimum required is "0.7.1") 
+[4.481s] -- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[4.482s] -- Looking for pthread.h
+[4.524s] -- Looking for pthread.h - found
+[4.524s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.565s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.566s] -- Found Threads: TRUE  
+[4.633s] -- Found Java: /usr/bin/java (found version "11.0.20") 
+[4.638s] -- Found JNI: /usr/lib/jvm/default-java/lib/libjawt.so  
+[4.639s] -- Downloading Jackson jarfiles...
+[6.553s] -- All files downloaded.
+[6.566s] -- Found libatomic: /usr/lib/x86_64-linux-gnu/libatomic.so.1
+[6.603s] -- Found libatomic: /usr/lib/x86_64-linux-gnu/libatomic.so.1
+[6.788s] -- Downloading EJML jarfiles...
+[9.982s] -- All files downloaded.
+[36.306s] -- Found Doxygen: /usr/bin/doxygen (found version "1.9.1") found components: doxygen 
+[36.328s] -- Including X11 support
+[36.380s] -- Found X11: /usr/include   
+[36.380s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[36.422s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[36.422s] -- Looking for gethostbyname
+[36.461s] -- Looking for gethostbyname - found
+[36.461s] -- Looking for connect
+[36.500s] -- Looking for connect - found
+[36.500s] -- Looking for remove
+[36.538s] -- Looking for remove - found
+[36.538s] -- Looking for shmat
+[36.578s] -- Looking for shmat - found
+[36.578s] -- Looking for IceConnectionNumber in ICE
+[36.617s] -- Looking for IceConnectionNumber in ICE - found
+[38.223s] -- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development Development.Module Development.Embed 
+[39.482s] Downloading /home/moenet/moenet2023-Anand/build/allwpilib/_deps/gl3w-build/include/GL/glcorearb.h...
+[39.482s] Downloading /home/moenet/moenet2023-Anand/build/allwpilib/_deps/gl3w-build/include/KHR/khrplatform.h...
+[39.482s] Parsing glcorearb.h header...
+[39.482s] Generating /home/moenet/moenet2023-Anand/build/allwpilib/_deps/gl3w-build/include/GL/gl3w.h...
+[39.482s] Generating /home/moenet/moenet2023-Anand/build/allwpilib/_deps/gl3w-build/src/gl3w.c...
+[39.535s] -- Found OpenCV: /usr (found version "4.5.4") 

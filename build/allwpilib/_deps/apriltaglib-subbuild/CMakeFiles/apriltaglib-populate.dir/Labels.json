@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/CMakeFiles/apriltaglib-populate"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/CMakeFiles/apriltaglib-populate.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/CMakeFiles/apriltaglib-populate-complete.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/apriltaglib-populate-prefix/src/apriltaglib-populate-stamp/apriltaglib-populate-build.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/apriltaglib-populate-prefix/src/apriltaglib-populate-stamp/apriltaglib-populate-configure.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/apriltaglib-populate-prefix/src/apriltaglib-populate-stamp/apriltaglib-populate-download.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/apriltaglib-populate-prefix/src/apriltaglib-populate-stamp/apriltaglib-populate-install.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/apriltaglib-populate-prefix/src/apriltaglib-populate-stamp/apriltaglib-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/apriltaglib-populate-prefix/src/apriltaglib-populate-stamp/apriltaglib-populate-patch.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/apriltaglib-populate-prefix/src/apriltaglib-populate-stamp/apriltaglib-populate-test.rule"
+		},
+		{
+			"file" : "/home/moenet/moenet2023-Anand/build/allwpilib/_deps/apriltaglib-subbuild/apriltaglib-populate-prefix/src/apriltaglib-populate-stamp/apriltaglib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"apriltaglib-populate"
+		],
+		"name" : "apriltaglib-populate"
+	}
+}
